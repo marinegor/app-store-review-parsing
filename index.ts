@@ -1,4 +1,4 @@
-import { file } from "bun";
+import { file, sleep } from "bun";
 import * as fs from 'fs';  // Add this line at the top of your file
 
 var store = require('app-store-scraper');
@@ -15,7 +15,8 @@ function getReviews({ page = 1, country = 'de' }) {
         sort: store.sort.RECENT,
         page: page,
         country: country,
-    })
+    });
+    sleep(1);
     return rv;
 }
 
