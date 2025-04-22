@@ -1,0 +1,13 @@
+{
+  "name": "app-store-review-parser",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "app-store-scraper": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
